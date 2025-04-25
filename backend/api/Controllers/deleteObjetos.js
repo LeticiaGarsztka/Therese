@@ -3,8 +3,6 @@ import { db } from "../db.js";
 export const deleteObjetos = (req, res) => {
     const objId = req.params.id; // pegar apenas o ID
 
-    console.log("Tentando excluir objeto com ID:", objId);
-
     const qry = "DELETE FROM objetos WHERE id = ?";
 
     db.query(qry, [objId], (erro, data) => {

@@ -68,8 +68,8 @@ function DataList(props) {
       method: "DELETE"
     })
     .then(response => {
+      alert("Tem certeza que deseja excluir este Objeto Litúrgico?")
       if (response.ok) {
-        alert("Tem certeza que deseja excluir este Objeto Litúrgico?")
         setData(data.filter(user => user.id !== id)); // Atualiza a lista
       } else {
         console.error("Erro ao excluir um objeto");
