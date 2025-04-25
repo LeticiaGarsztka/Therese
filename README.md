@@ -35,5 +35,5 @@ Baseado na proposta de um Projeto React, criei uma loja de objetos litúrgicos q
     
     
     - `MySQL` como Banco de Dados
-        - Utiliza 5 campos relevantes, sendo eles: nome do objeto, descrição, preço, quantidade e foto (autoral) do produto.
+        - Utiliza 6 campos relevantes, sendo eles: id, nome, descrição, preço, quantidade e foto (autoral) do produto.
         - Configuração de conexões e consultas por `query`.
