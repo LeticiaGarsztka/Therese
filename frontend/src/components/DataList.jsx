@@ -41,14 +41,14 @@ function DataList(props) {
       })
       .catch(error => console.error("Erro ao buscar objetos:", error));
   };
-
+  // exibe prévia da imagem
   const handleImageUpload = (e) => {
     const file = e.target.files[0];
     if (file){
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
+      const reader = new FileReader(); // leitor de arquivo
+      reader.readAsDataURL(file); // lê como base64
       reader.onload = () => {
-        setFormData({ ...formData, foto: file, preview: reader.result});
+        setFormData({ ...formData, foto: file, preview: reader.result}); // realiza a exbição prévia da imagem 
       }
     }
   };
