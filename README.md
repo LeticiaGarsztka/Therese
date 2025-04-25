@@ -10,7 +10,7 @@ Baseado na proposta de um Projeto React, criei uma loja de objetos litúrgicos q
 - No Visual Studio Code, clone meu repositório, com: `git clone ` + a URL do meu repositório.
 - Salve o meu projeto na pasta desejada.
 - Abra a pasta em que você realizou o download do meu projeto.
-- Entre na pasta `banco` e abra o `script.bd` para alterar as senha do banco de dados.
+- Entre na pasta `backend/api` e abra o `db.js` para alterar as senha do banco de dados.
 - Abra 2 terminais `cmd`, um para o frontend e outro para o backend.
     - Para backend, faça: `cd backend/api`.
     - Para frontend, faça: `cd frontend`.
