@@ -9,9 +9,6 @@ import insertRouter from "./Routes/insertRoute.js";
 import { db } from "./db.js";
 const app = express();
 
-
-
-
 // Middleware de CORS e JSON
 app.use(cors());
 app.use(express.json());
