@@ -30,7 +30,7 @@ function DataList(props) {
     fetchObjetos();
   }, [currentPage]); // atualiza a lista quando a página for alterada
 
-  // Função para buscar os objetos
+  // Função para buscar os objetos de cada página
   const fetchObjetos = () => {
     fetch(`http://localhost:8900/objetos?page=${currentPage}&limit=${itensPorPagina}`)
       .then(response => response.json())
